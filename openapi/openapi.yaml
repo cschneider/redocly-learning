@@ -11,7 +11,7 @@ tags:
   - name: Models
     description: Content Fragment Models Operations
 security:
-  - 
+  - Basic: []
   - Bearer: []
   - ApiKey: []
   - Organization: []
