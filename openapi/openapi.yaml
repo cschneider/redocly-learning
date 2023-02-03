@@ -15,7 +15,7 @@ security:
   - ApiKey: []
   - Organization: []
 servers:
-  - url: /adobe
+  - url: https://author-p52110-e148259-cmstg.adobeaemcloud.com/adobe/sites/cf/models
 
 paths:
   /cf/models:
