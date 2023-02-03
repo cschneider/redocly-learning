@@ -35,11 +35,11 @@ paths:
         This API call provides support for retrieving all of the Content Fragment Models
         accessible to the current user. The request can be paginated.
       parameters:
-        - in: query
-          name: cursor
-          required: false
-          schema:
-            $ref: '#/components/schemas/Cursor'
+#        - in: query
+#          name: cursor
+#          required: false
+#          schema:
+#            $ref: '#/components/schemas/Cursor'
         - in: query
           name: limit
           required: false
