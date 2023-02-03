@@ -23,6 +23,7 @@ paths:
     parameters:
       - $ref: '#/components/parameters/X-Adobe-Accept-Unsupported-API'
       - $ref: '#/components/parameters/x-adobe-tenant'
+      - $ref: '#/components/parameters/X-Adobe-Accept-Experimental'
     get:
       operationId: models/getModels
       tags:
@@ -703,9 +704,16 @@ components:
       schema:
         enum:
           - 1
+    X-Adobe-Accept-Experimental:
+      name: X-Adobe-Accept-Unsupported-API
+      in: header
+      required: true
+      schema:
+        enum:
+          - 1
     x-adobe-tenant:
       name: x-adobe-tenant
       in: header
       required: true
       schema: 
-        default: string
+        default: 
