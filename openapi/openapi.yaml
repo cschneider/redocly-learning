@@ -16,12 +16,13 @@ security:
   - ApiKey: []
   - Organization: []
 servers:
-  - url: https://author-p52110-e148259-cmstg.adobeaemcloud.com/adobe/sites
+  - url: https://api-dev.adobeaemcloud.com/adobe/sites/cf/models
 
 paths:
   /cf/models:
     parameters:
       - $ref: '#/components/parameters/X-Adobe-Accept-Unsupported-API'
+      - $ref: '#/components/parameters/x-adobe-tenant'
     get:
       operationId: models/getModels
       tags:
@@ -702,3 +703,9 @@ components:
       schema:
         enum:
           - 1
+    x-adobe-tenant:
+      name: x-adobe-tenant
+      in: header
+      required: true
+      schema: 
+        default: string
