@@ -705,7 +705,7 @@ components:
         enum:
           - 1
     X-Adobe-Accept-Experimental:
-      name: X-Adobe-Accept-Unsupported-API
+      name: X-Adobe-Accept-Experimental
       in: header
       required: true
       schema:
