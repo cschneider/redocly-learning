@@ -16,7 +16,7 @@ security:
   - ApiKey: []
   - Organization: []
 servers:
-  - url: https://api-dev.adobeaemcloud.com/adobe/sites/cf/models
+  - url: https://api-dev.adobeaemcloud.com/adobe/sites
 
 paths:
   /cf/models:
